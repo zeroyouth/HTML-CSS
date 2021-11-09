@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        /* float 해제하는 여러가지 방법들 : 
+            감싸고 있는 부모태그에 1,2를 준다. 또는
+            가상요소를 추가해서 :after(inline) clear넣어주기!
+            형제요소에 clear:both; 넣어주기 등이 있음.*/
+        
+        ul {
+            /* 1. overflow:hidden or
+                2. display: inline-block */
+        }
+        /* 3. clear-fix */
+        ul::after {
+            display: block;
+            content: '';
+            clear:both;
+        }
+        li {
+            float: left;
+            height: 100px;
+            width: 300px;
+            background: pink;  }
+            /* list-style: none; */
+
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
