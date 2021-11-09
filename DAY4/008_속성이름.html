@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 이름</title>
+    <style>
+        a[href="http://www.paullab.co.kr"] {
+            /* 100프로 매칭 */
+            font-size: 48px;
+            color:seagreen;
+        }
+        a[href~="paullab"] {
+            font-weight: 900;
+        }
+        a[href*="paul"] { 
+            /* 둘의 차이점 : 하나는 문자열이고 하나는 단어다.
+            *=에는 문자열을 기준으로 paullab가 들어가 있기 때문에 선택을 한다.  */
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.paullab.co.kr">클릭해!</a>
+    <a href="#">클릭해!</a>
+</body>
+</html>

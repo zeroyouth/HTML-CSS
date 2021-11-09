@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css id</title>
+    <style>
+        #one {
+            color:aqua;
+        }
+        #two {
+            border: solid 1px black;
+        }
+        #three {
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.id는 중첩불가능 class는 중첩가능
+         2.페이지내에 id는 유일해야한다. class는 여러개 존재해도 된다 -->
+    <a href="#one">클릭</a>
+    <h1>hello youungeun</h1>
+    <h1>hello youungeun</h1>
+    <h1 id="one">hello youungeun</h1>
+    <h1 id="two three">hello youungeun</h1>
+    <h1 id="two">hello youungeun</h1>
+</body>
+</html>

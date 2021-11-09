@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radius</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(232, 247, 34);
+            position: inherit;
+        }
+        .one {
+            display: inline-block;
+            border: 20px solid rgb(230, 110, 110);
+            border-top-left-radius: 150px;
+            border-top-right-radius: 50px;
+           
+        }
+        .two {
+            display: inline-block;
+            border: 20px solid rgb(230, 110, 110);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 150px;
+            margin-left: 40px;
+        }
+        .three {
+            position: absolute;
+            border : 20px solid rgb(230, 110, 110);
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            width : 480px;
+            height: 400px;
+            margin-top: 0;
+            border-top-width: 0px
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>
