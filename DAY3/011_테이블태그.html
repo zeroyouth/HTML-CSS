@@ -1,0 +1,87 @@
+<!--테이블 태그-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그</title>
+    <style>
+        table {
+            width: 80%;
+            border: 2px solid rgb(100, 100, 100);
+            border-collapse: collapse;
+        }
+        tr, th, td {border: solid 1px black;}
+        td:nth-child(1), td:nth-child(4) {text-align: center;}
+        td:nth-child(3) {text-align: right;}
+        td:hover { background-color: rgb(249, 253, 184); cursor: pointer;}
+        th:nth-last-child(1) {background-color: rgb(162, 193, 250);}
+        .구분 {
+        width: 10%;
+        }
+        .이름 {
+            width: 30%;
+        }
+        .가격 {
+            width: 20%;
+        }
+        .판매량 {
+            width: 20%;
+        }
+        .돈 {
+            text-align: center;
+            color: rgb(255, 82, 1);
+        }
+        
+    </style>
+</head>
+<body>
+    <table> 
+        <!--table>(tr>th*3)+(tr>td*3)*3-->
+        <caption>
+            이 table은 영국에서 최초로 시작되어 일년에 한바퀴 돌면서...
+          </caption>
+          <colgroup>
+            <col class="구분" />
+            <col class="이름" />
+            <col class="가격" />
+            <col class="판매량" />
+          </colgroup>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>책 이름</th>
+                <th>책 가격</th>
+                <th>책 판매량</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>hello1</td>
+                <td>1,000</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>hello2</td>
+                <td>2,000</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>hello3</td>
+                <td>3,000</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">총 판매량</td>
+                <td class="돈">6</td>
+            </tr>
+        </tfoot>
+        </table>
+ </body>
+</html>
