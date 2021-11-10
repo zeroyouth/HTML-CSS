@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>mybtn</title>
+    <style>
+        div {
+            margin-top: 11px;
+            margin-left: 10px;
+            border-radius: 20px;
+            padding: 3px 6px;
+            width: 85px;
+            height:35px;
+            overflow: hidden;
+            text-align: center;
+            vertical-align: middle;
+            background: rgb(119, 200, 216);
+        }
+    
+        .btn {
+            border: 4px solid rgb(119, 200, 216);
+            background: rgb(119, 200, 216);;
+            transition: all .28s ;
+            color: white;
+        }
+    
+        .btn:hover,
+        .btn:focus,
+        .btn:active {
+            letter-spacing: 1.5px;
+        }
+    
+        .btn::after,
+        .btn::before {
+            border: 1px solid rgba(255, 255, 255, 0);
+            bottom: 0;
+            content: " ";
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            transition: all .28s;
+            width: 0;
+        }
+    
+        .btn:hover::after,
+        .btn:hover::before {
+            border-color: #fff;
+            transition: width 350ms ease;
+            width: 90%;
+        }
+    
+        .btn:hover::before {
+            bottom: auto;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+        <div>
+            <button class="btn">click👼</button>
+        </div>
+
+
+</body>
+</html>
