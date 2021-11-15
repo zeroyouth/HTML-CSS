@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <title>
+        로그인 / 회원가입 페이지 만들기
+    </title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="top">
+            <h1 class="sc-only">위니브 로그인 & 회원가입</h1>
+            <p>로그인 또는 회원가입</p>
+            <input class="close_btn" type="button" onClick="window.close()">
+        </header>
+        <main id="login">
+            <h2>위니브에서 여러분의 궁금증을 해결하세요!:)</h2>
+            <input class="id" type="text" placeholder="아이디" required>
+            <input class="passward" type="text" placeholder="비밀번호" required>
+            <div class="login_keep_wrap">
+                <input type="checkbox" name="checkbox-circle" class="checkbox_circle" value="off">
+                <p>로그인 상태 유지</p>
+            </div>
+            <button class="login_btn"type="submit">로그인</button>
+            <ul class="find_wrap">
+                <li><a class="find_text" href="#">회원가입</a></li>
+                <li><a class="find_text" href="#">아이디/비밀번호 찾기</a></li>
+            </ul>
+        </main>
+        <footer id="sns-login">
+            <p class="or">또는</p>
+            <div class="btn_wrap">
+                <button class="btn g_btn">
+                    <img src="./img/Google__G__Logo 1.png" alt="">
+                    구글 계정으로 로그인
+                </button>
+                <button class="btn f_btn">
+                    <img src="./img/facebook.png" alt="">
+                    페이스북 계정으로 로그인
+                </button>
+                <button class="btn n_btn">
+                    <img src="./img/naver-logo.png" alt="">
+                    네이버 계정으로 로그인
+                </button>
+                <button class="btn k_btn">
+                    <img src="./img/message-circle.png" alt="">
+                    카카오톡 계정으로 로그인
+                </button>
+            </div>
+        </footer>
+    </div>
+</body>
+    
+    </html>

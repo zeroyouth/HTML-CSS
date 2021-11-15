@@ -1,0 +1,45 @@
+<!-- OOCSS- 여러 모듈을 만들어 조합
+    구조와 스킨을 분리하여 조합합니다.  -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css설계기법</title>
+    <style>
+        /* 구조와 스킨을 분리시킨다. */
+        /* .btn1 {
+            width: 200px;
+            height: 80px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .btn2 {
+            width: 200px;
+            height: 80px;
+            background: black;
+            font-size: 30px;
+            color: white;
+            border: 3px dotted #fff;
+        } */
+
+        .btn {
+            width: 200px;
+            height: 80px;
+            font-size: 30px;
+        }
+
+        .btn-close {
+            background: black;
+            color: white;
+            border: 3px dotted #fff;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" class="btn"></button>
+    <button type="button" class="btn btn-close"></button>
+</body>
+</html>
