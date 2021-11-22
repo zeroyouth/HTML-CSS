@@ -1,0 +1,17 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.cont-select {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+}
+
+.list-member {
+    display: none;
+    width: 200px;
+    height: 30px;
+}
