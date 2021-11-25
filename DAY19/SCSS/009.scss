@@ -1,0 +1,45 @@
+$normal-font-size: 16px;
+
+@function scale-below($value, $base, $ratio: 2) {
+    @while $value > $base {
+        $value: ($value/$ratio);
+    }
+    @return $value;
+}
+
+.sup {
+    font-size: scale-below(20px, 4px);
+}
+
+/////////////////////////
+//1번 순회
+// @function scale-below(20px, 4px, 2) {
+//     @while 20px > 4px {
+//         $value: (20px/2); -> 10
+//     }
+//     @return $value;
+// }
+
+// //2번 순회
+// @function scale-below(20px, 4px, 2) {
+//     @while 10px > 4px {
+//         $value: (10px/2); -> 5
+//     }
+//     @return $value;
+// }
+
+// //3번 순회
+// @function scale-below(20px, 4px, 2) {
+//     @while 5px > 4px {
+//         $value: (5px/2); -> 2
+//     }
+//     @return $value;
+// }
+
+// //4번 순회
+// @function scale-below(20px, 4px, 2) {
+//     @while 2.5px > 4px {
+//         $value: (2px/2); -> 탈출
+//     }
+//     @return $value; -> 2.5px
+// }
